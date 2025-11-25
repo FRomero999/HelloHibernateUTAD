@@ -9,7 +9,7 @@
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
         <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/ad</property>
         <property name="hibernate.connection.username">root</property>
-        <property name="hibernate.connection.password">root</property>
+        <property name="hibernate.connection.password">pass</property>
 
         <!-- Mostrar SQL en consola -->
         <property name="hibernate.show_sql">true</property>
@@ -23,7 +23,7 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
 
         <!-- Mapeo de clases de entidad (añade tus clases aquí) -->
-        <!-- mapping class="org.example.Game"/-->
+        <mapping class="org.example.Game"/>
         <!-- <mapping class="com.tuempresa.modelo.Producto"/> -->
 
     </session-factory>
