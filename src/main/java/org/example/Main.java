@@ -20,6 +20,24 @@ public class Main {
             }
 
  */
+/*            Game g = new Game();
+            g.setTitle("Juego random");
+            g.setPlatform("Plataforma random");
+
+            System.out.println(g);
+            session.beginTransaction();
+            session.persist(g);
+            g.setYear(2025);
+            g.setUser_id(1);
+            g.setDescription("Random description");
+            session.getTransaction().commit();
+            System.out.println(g);
+
+ */
+
+            session.beginTransaction();
+            session.remove( session.find(Game.class,49) );
+            session.getTransaction().commit();
 
 
         }
