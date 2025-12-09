@@ -23,8 +23,10 @@
         <property name="hibernate.hbm2ddl.auto">update</property>
 
         <!-- Mapeo de clases de entidad (añade tus clases aquí) -->
-        <mapping class="org.example.Game"/>
+        <mapping class="org.example.models.Game"/>
+        <mapping class="org.example.models.User"/>
         <!-- <mapping class="com.tuempresa.modelo.Producto"/> -->
+
 
     </session-factory>
 </hibernate-configuration>
